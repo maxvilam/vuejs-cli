@@ -1,9 +1,11 @@
 <template>
   <div id="style">
-    <h1 class="display-1">Crea una nueva tarea</h1>
-    <h3>Tarea</h3>
+    <h1 class="display-2 my-3 opacity-50">Crea una nueva tarea</h1>
+    <p class="my-3"> 
+    <span class="blockquote mx-1">Tarea</span>
     <input v-model="nombre" type="text" />
     <button @click="Guardar" class="btn btn-info mx-1">Crear</button>
+    </p>
     <h2>Lista</h2>
     <ul class="centrarlista" v-for="(resultado, i) of arrayTarea" :key="i">
       <li class="justify-content-center">{{ 1 + i }}: {{ resultado.nombre }}</li>
